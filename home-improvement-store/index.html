@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Improvement Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Home Improvement Store</h1>
+
+        <div class="header-actions">
+            <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+
+    <!-- Search and Filters -->
+    <section class="controls">
+
+
+    <div class="category-buttons">
+    <button class="category-btn" data-category="All">All</button>
+    <button class="category-btn" data-category="Tools">Tools</button>
+    <button class="category-btn" data-category="Electrical">Electrical</button>
+    <button class="category-btn" data-category="Plumbing">Plumbing</button>
+    </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <main>
+        <h2>Products</h2>
+
+        <div id="productContainer" class="product-container">
+            <!-- Products will be added here using JavaScript -->
+        </div>
+    </main>
+
+
+    <!-- Shopping Cart -->
+    <section id="cartSection">
+
+        <h2>Shopping Cart</h2>
+
+        <div id="cartContainer">
+            <!-- Cart items will be added here using JavaScript -->
+        </div>
+
+        <div class="cart-summary">
+            <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+            <p>Tax (10%): ₹<span id="tax">0.00</span></p>
+            <h3>Total: ₹<span id="total">0.00</span></h3>
+
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
